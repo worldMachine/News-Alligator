@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>News Alligator</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src='js/config.js'></script>
+		<script src='js/requestURL.js'></script>
+		<script src="js/news.js"></script>
+		<script src="js/index.js"></script>
+		<script src="js/main.js"></script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="icon" type="image/png" href="resources/alligator.png" />
+	</head>
+
+	<body>
+		<div id="page-bg" class="white">
+		
+			<!-- Top Navigation Panel -->
+			<nav id="topnav" class="navbar navbar-default navbar-fixed-top black">
+			  <div class="container-fluid">
+				
+				<!-- Menu Button -->
+				<div class="navbar-header">
+					<div class="navbar-brand">
+						<span class="icon-bar" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+					</div>
+				</div>
+				
+				<!-- Website Title -->
+				<div class="normal-opacity">
+				  <h2 id="nav-title" class="nav-text"><span class="news-word">News</span> Alligator</h2>
+				</div>
+				
+				<!-- Search Bar -->
+				<div class="col-sm-6 col-sm-offset-3 searchBar">
+					<div class="input-group stylish-input-group">
+						<input id="userInput" type="text" class="form-control"  placeholder="Search" >
+						<span class="input-group-addon">
+							<button id="searchBtn" onclick="search()" type="submit">
+								<span class="glyphicon glyphicon-search"></span>
+							</button>  
+						</span>
+						<script src="js/searchListener.js"></script>
+					</div>
+				</div>
+				
+			  </div>
+			</nav>
+
+			<div id="sidenav-container">
+				<div class="top-tron">
+					<div id="mySidenav" class="sidenav">
+					  <a href="index.html">All</a>
+					  <a href="html/tech.html">Tech</a>
+					  <a href="html/business.html">Business</a>
+					  <a href="html/crime.html">Crime</a>
+					  <a href="html/sources.html">Sources</a>
+					  <a href="html/about.html">About</a>
+					</div>
+				</div>
+			</div>
+
+			<div id="main" class="">
+				<div class="container text-center page-title padding-bottom-small">
+				  <h1>Top Stories</h1>
+				</div>
+				
+				<div id="container0" class="container">
+				  <div id="row0" class="row">
+					
+					<div id="brChild0">
+					</div>
+					
+				  </div>
+				</div>
+				
+				<div id="bottomMainChild">
+				</div>
+				<div class="fab2" onclick="reloadPage()">
+					<img src="resources/reload.png" class="imgReload"></img>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
